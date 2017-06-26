@@ -1,0 +1,158 @@
+<!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/senzor_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textIsSelectable="true"
+    tools:context="com.unipu.marko.pametnakuca.SenzorDetailFragment" />-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="com.unipu.marko.pametnakuca.SenzorListActivity">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/space" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/senzor_detail"
+        android:layout_centerHorizontal="true"
+        android:max="50"
+        android:progress="0"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/senzor_detail"
+        android:layout_centerHorizontal="true"
+        android:max="50"
+        android:progress="0"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/senzor_detail"
+        style="?android:attr/textAppearanceLarge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="cursive"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        tools:context="com.unipu.marko.pametnakuca.SenzorDetailFragment" />
+
+    <TextView
+        android:id="@+id/value0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:text="0"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/value0"
+        android:text="10"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/senzor_detail"
+        android:layout_below="@+id/progressBar"
+        android:text="20"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/value3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/senzor_detail"
+        android:layout_below="@+id/progressBar"
+        android:text="30"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/value4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginStart="41dp"
+        android:layout_toEndOf="@+id/value3"
+        android:text="40"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/value5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:text="50"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/space"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/kuca" />
+
+    <TextView
+        android:id="@+id/PregledTempPrikaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/value4"
+        android:layout_alignEnd="@+id/value4"
+        android:text="30"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/PregledPritisakPrikaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginRight="23dp"
+        android:layout_toEndOf="@+id/value3"
+        android:text="1000"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>
